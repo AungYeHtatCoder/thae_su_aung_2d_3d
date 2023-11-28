@@ -74,195 +74,6 @@ class WelcomeController extends Controller
         return view('welcome', compact('data', 'banners'));
     }
 
-    public function wallet()
-    {
-        return view('frontend.wallet');
-    }
-
-    public function topUp()
-    {
-        return view('frontend.topUp');
-    }
-
-    public function topUpSubmit()
-    {
-        return view('frontend.topUpSubmit');
-    }
-
-
-    public function withDraw()
-    {
-        return view('frontend.withDraw');
-    }
-
-    public function promo()
-    {
-        return view('frontend.promotion');
-    }
-
-    public function promoDetail()
-    {
-        return view('frontend.promoDetail');
-    }
-
-    public function servicePage()
-    {
-        return view('frontend.service');
-    }
-
-    public function dashboard()
-    {
-        return view('frontend.dashboard');
-    }
-
-    public function winnerDigit()
-    {
-        return view('frontend.winnerDigit');
-    }
-
-    public function winnerPage()
-    {
-        return view('frontend.winner_page');
-    }
-
-    public function myDigit()
-    {
-        return view('frontend.myDigit');
-    }
-
-
-
-    public function myBank()
-    {
-        return view('frontend.my-bank');
-    }
-
-    public function changePassword()
-    {
-        return view('frontend.change-password');
-    }
-
-
-    public function twoD()
-    {
-        return view('frontend.twod');
-    }
-
-    public function twoDPlay()
-    {
-        return view('frontend.twodplay');
-    }
-
-    public function twoDQuick()
-    {
-        return view('frontend.twod-quick');
-    }
-
-    public function threeD()
-    {
-        return view('frontend.threeD');
-    }
-
-    public function threedBet()
-    {
-        return view('frontend.threed-bet');
-    }
-
-    public function threedNum()
-    {
-        return view('frontend.threed-num');
-    }
-
-    public function threedQuick()
-    {
-        return view('frontend.threed-quick');
-    }
-
-    public function threedConfirm()
-    {
-        return view('frontend.threed-confirm');
-    }
-
-    public function threedWinner()
-    {
-        return view('frontend.threed-winner');
-    }
-
-    public function threedHistory()
-    {
-        return view('frontend.threed-history');
-    }
-
-    public function inviteCode()
-    {
-        return view('frontend.invite-code');
-    }
-
-    public function comment()
-    {
-        return view('frontend.comment');
-    }
-
-    public function user_dashboard()
-    {
-        return view('frontend.user-dashboard');
-    }
-
-    public function winningRecord()
-    {
-        return view('frontend.winning-record');
-    }
-
-    public function moriningPrize()
-    {
-        return view('frontend.morning-session-prize-no-history');
-    }
-
-    public function moriningRecord()
-    {
-        return view('frontend.play-two-morning-record');
-    }
-
-    public function eveningRecord()
-    {
-        return view('frontend.play-two-evenving-record');
-    }
-
-    public function morningHistoryRecord()
-    {
-        return view('frontend.morning-history-record');
-    }
-
-    public function eveningHistoryRecord()
-    {
-        return view('frontend.evening-history-record');
-    }
-
-
-    public function twodLive()
-    {
-        // return view('two_d.api_test');
-        return view('frontend.twod-live');
-    }
-
-    public function twodCalendar()
-    {
-        // return view('two_d.api_test');
-        return view('frontend.twod-calendar');
-    }
-
-    public function twodDreamBook()
-    {
-        return view('frontend.dream-book');
-    }
-
-    public function threedResult()
-    {
-        // return view('two_d.api_test');
-        return view('frontend.threed-result');
-    }
-
-
     /**
      * Show the form for creating a new resource.
      */
@@ -340,7 +151,6 @@ class WelcomeController extends Controller
     //     // }
     // }
 
-
     /**
      * Display the specified resource.
      */
@@ -373,48 +183,57 @@ class WelcomeController extends Controller
         //
     }
 
-    public function userProfile()
+    public function twoD()
     {
-        return view('frontend.user_profile');
+        return view('frontend.twoD');
     }
-
-    public function userFillMoney()
+    public function twoDPlay()
     {
-        return view('user_fillmoney');
+        return view('frontend.twoD-play');
     }
-
-    public function userLogin()
+    public function twoDConfirm()
     {
-        return view('frontend.user-login');
+        return view('frontend.twoD-confirm');
     }
-
-    public function userRegister()
+    public function twoDWinner()
     {
-        return view('frontend.user-register');
+        return view('frontend.twoD-winner');
     }
-
-    public function winnerList()
+    public function twoDHistory()
     {
-        return view('winner_lists');
+        return view('frontend.twoD-history');
     }
-
-    public function lotteryResult()
+    public function wallet()
     {
-        return view('lottery_result');
+        return view('frontend.wallet');
     }
-
+    public function topUp()
+    {
+        return view('frontend.topUp');
+    }
+    public function topUpConfirm()
+    {
+        return view('frontend.topUp-confirm');
+    }
+    public function withdraw()
+    {
+        return view('frontend.withdraw');
+    }
+    public function withdrawConfirm()
+    {
+        return view('frontend.withdraw-confirm');
+    }
     public function contact()
     {
-        return view('contact');
+        return view('frontend.contact');
     }
 
-    public function service()
+    public function changePwd()
     {
-        return view('service');
+        return view('frontend.changepw');
     }
-
-    public function userRequestMoney()
+    public function banks()
     {
-        return view('request_money');
+        return view('frontend.banks');
     }
 }
